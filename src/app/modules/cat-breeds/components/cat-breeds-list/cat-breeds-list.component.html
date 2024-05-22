@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="cat-breeds-list-content col-md-4" *ngFor="let catBreed of catBreeds">
+        <div>
+            <div>Id: {{catBreed.id}}</div>
+            <div>
+                <img class="img-cat" alt="" [src]="catBreed.url" (click)="redirectDetail(catBreed.id)">
+                <button class="btn-detail" (click)="redirectDetail(catBreed.id)">Detail</button>
+            </div>
+        </div>
+    </div>
+</div>

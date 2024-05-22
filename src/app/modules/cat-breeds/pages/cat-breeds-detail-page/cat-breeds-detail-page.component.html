@@ -1,0 +1,12 @@
+<div>
+    <h1>Cat Breeds detail</h1>
+    <div
+        *ngFor="let breed of breeds"
+    >
+        <app-cat-breeds-detail
+            [breed]="breed"
+        >
+        </app-cat-breeds-detail>
+    </div>
+    <div></div>
+</div>

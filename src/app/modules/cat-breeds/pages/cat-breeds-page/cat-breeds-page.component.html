@@ -1,0 +1,18 @@
+<div class="cat-breeds-content">
+    <div>
+        <h1>Cat Breeds</h1>
+    </div>
+    <div>
+        <form [formGroup]="searchCatBreedsForm">
+            <input formControlName="searchCatBreeds" type="text" placeholder="Buscar" (keyup)="searchCatBreeds()" />
+        </form>
+    </div>
+    <div
+    >
+        <app-cat-breeds-list *ngIf="catBreeds.length > 0" [catBreeds]="catBreeds"></app-cat-breeds-list>
+    </div>
+    <div class="content-button">
+        <button (click)="getCatBreedsPage()">ver más</button>
+    </div>
+
+</div>

@@ -1,0 +1,24 @@
+.cat-breeds-detail-content {
+    .description {
+        .item {
+            display: flex;
+            padding: 5px;
+
+            .label {
+                font-weight: bold;
+                margin-right: 5px;
+            }
+            .description-item {
+                max-width: 400px;
+            }
+        }
+    }
+    .img {
+        max-width: 500px;
+        max-height: 500px;
+        @media (max-width: 768px) {
+            max-width: 300px;
+            max-height: 300px;
+        }
+    }
+}

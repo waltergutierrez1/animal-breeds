@@ -1,0 +1,12 @@
+@import "../../../../../variables.scss";
+
+.cat-breeds-content {
+  display: flex;
+  flex-direction: column;
+  .content-button {
+    padding-top: 20px;
+    margin: auto;
+  }
+}
+
+  
